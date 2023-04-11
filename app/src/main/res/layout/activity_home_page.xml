@@ -12,6 +12,7 @@
         android:layout_height="63dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
+        android:onClick="switchToNewLutemon"
         android:text="Luo uusi Lutemon"
         android:textSize="11sp"
         app:layout_constraintStart_toStartOf="parent"

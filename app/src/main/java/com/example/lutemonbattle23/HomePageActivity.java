@@ -1,6 +1,8 @@
 package com.example.lutemonbattle23;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -22,4 +24,11 @@ public class HomePageActivity extends AppCompatActivity {
         recyclerView.setAdapter(new LutemonListAdapter(getApplicationContext(), storage.listLutemons()));
 
     }
+
+    public void switchToNewLutemon(View view) {
+        Intent intent = new Intent(this, NewLutemonActivity.class);
+        startActivity(intent);
+    }
+
+
 }
